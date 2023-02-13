@@ -6,8 +6,8 @@ var port = 3000;
 
 var server = http.createServer((request, response) => {
 	response.writeHead(200, { "Content-Type": "text/plain" });
-	console.log("server Working");
-	response.end("Server Working Success");
+	response.write("Hello World");
+	response.end("");
 });
 
 server.listen(port, host, (error) => {
